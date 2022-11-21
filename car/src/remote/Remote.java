@@ -12,10 +12,10 @@ public class Remote {
     public Remote(boolean isOn, boolean hasPower) {
         this.isOn = isOn;
         this.hasPower = hasPower;
-        this.batteries = new ArrayList<Battery>();
+        this.batteries = new ArrayList<>();
     }
 
-    public void turnOn(boolean isOn){
+    public void turnOn(){
         checkForPower();
         if(getHasPower() == true){
             setIsOn(true);
